@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bg"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="132dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/homecarehublogo" />
+
+
+
+      <!-- Email Label -->
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/oxygen_bold"
+          android:text="Enter Email"
+          android:textColor="#000"
+          android:textSize="12sp"
+          android:textStyle="normal" />
+
+
+      <EditText
+          android:id="@+id/input_email"
+          android:layout_width="match_parent"
+          android:background="@drawable/bg_gray"
+          android:layout_height="50dp"
+          android:backgroundTint="@color/colorAccent"
+          android:layout_marginTop="8dp"
+          android:hint="Email"
+          android:inputType="textEmailAddress" />
+
+
+      <!-- Password Label -->
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/oxygen_bold"
+          android:text="Enter Password"
+          android:textColor="#000"
+          android:textSize="12sp"
+          android:textStyle="normal" />
+
+      <EditText
+          android:id="@+id/input_password"
+          android:layout_marginTop="8dp"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Password"
+          android:backgroundTint="@color/colorAccent"
+          android:background="@drawable/bg_gray"
+          android:inputType="textPassword" />
+
+      <CheckBox
+          android:layout_width="match_parent"
+          android:layout_marginTop="5dp"
+          android:text="Remember me"
+          android:id="@+id/RememberMe"
+          android:layout_height="wrap_content" />
+
+      <android.support.v7.widget.AppCompatButton
+          android:id="@+id/btn_login"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="15dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/rounded_border_edittext_filled"
+          android:padding="12dp"
+          android:text="Login"
+          android:textColor="#ffffff" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Not yet a member?"
+            android:id="@+id/notyet"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_toEndOf="@+id/notyet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="5dp"
+            android:text="Register Here"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/notyet" />
+
+      </RelativeLayout>
+      <TextView
+          android:id="@+id/ResetPassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="24dp"
+          android:layout_gravity="center"
+          android:fontFamily="@font/carter_one"
+          android:textColor="@android:color/black"
+          android:text="Click to Reset Passsword" />
+
+
+
+</LinearLayout>
+</ScrollView>

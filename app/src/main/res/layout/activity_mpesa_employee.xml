@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        app:titleTextColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/AppTheme.ActionBar"
+        android:elevation="4dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/twigaLogoImageView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/mpesa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/totalamount"
+                android:fontFamily="@font/oxygen_bold"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="@string/employee_subscription"
+                android:textColor="#CF1E25"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Select Subscription Type"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/subscription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner"
+                android:spinnerMode="dropdown" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Enter phone number"
+                    android:textColor="#000"
+                    android:id="@+id/phonenumber"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="*Phone number used during registration"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/phonenumber"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/phonenumber" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_gray"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Enter Amount"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:textSize="24dp"
+                android:background="@drawable/bg_gray"
+                android:hint="Amount will appear here"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_green_button"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Lipa na Mpesa"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sendContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/continue_btn"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

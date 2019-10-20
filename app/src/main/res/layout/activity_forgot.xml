@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/homecarehublogo" />
+
+
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/carter_one"
+                android:gravity="center_horizontal"
+                android:text="Reset Password"
+                android:textColor="#000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Valid Email Address"
+                        android:textColor="#000"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/ForgotEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_gray"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Valid Email Address"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Verification code"
+                            android:textColor="#000"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/ForgotCode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_gray"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:drawableTint="@color/colorPrimary"
+                            android:hint="Enter code"
+                            android:inputType="number"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/Forgotbtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/rounded_border_edittext_filled"
+                        android:fontFamily="@font/carter_one"
+                        android:text="SEND CODE"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/Resetbtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/rounded_border_edittext_filled"
+                        android:fontFamily="@font/carter_one"
+                        android:text="RESET"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

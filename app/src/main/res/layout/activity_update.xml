@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Update">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tabanim_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.ActionBar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="First Name"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <!--  First Name Label -->
+                <EditText
+                    android:id="@+id/update_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="First Name"
+                    android:inputType="textCapWords"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Last Name"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <!--  Last Name Label -->
+                <EditText
+                    android:id="@+id/update_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="ID Number"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <!--  ID Label -->
+                <EditText
+                    android:id="@+id/update_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="ID Number"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/oxygen_bold"
+                        android:text="Phone Number"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/phonenumber"
+                        android:layout_toRightOf="@+id/phonenumber"
+                        android:fontFamily="@font/oxygen_bold"
+                        android:text="*e.g 0701675461"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+
+                <!--  Phone Label -->
+                <EditText
+                    android:id="@+id/update_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Current Location"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <!-- Email Label -->
+                <EditText
+                    android:id="@+id/update_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Current Location"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Password"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <!-- Password Label -->
+                <EditText
+                    android:id="@+id/update_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Confirm Password"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <!-- Verify Password Label -->
+                <EditText
+                    android:id="@+id/update_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+
+                <android.support.v7.widget.AppCompatButton
+
+                    android:id="@+id/update_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_border_edittext_filled"
+                    android:padding="12dp"
+                    android:paddingStart="36dp"
+                    android:paddingLeft="36dp"
+                    android:paddingEnd="36dp"
+                    android:paddingRight="36dp"
+                    android:text="Update"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

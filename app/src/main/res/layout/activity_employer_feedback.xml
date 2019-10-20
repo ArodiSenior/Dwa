@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EmployerFeedback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Employer Feedback Form"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:fontFamily="@font/oxygen_bold"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/black"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:background="@drawable/titleborder"
+                android:text="Employee information"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/feedborder"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Employee name *"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/feed_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_gray"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Employee name"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Employee phone *"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/feed_phone"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_gray"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Employee phone"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Employee email *"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/feed_email"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_gray"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Employee email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oxygen_bold"
+                android:text="Employee occupation *"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/feed_occupation"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_gray"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Employee occupation"
+                android:inputType="text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:background="@drawable/titleborder"
+                android:text="Characteristics"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/feedborder"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Quality of work *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_quality"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Work consistency *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_consistency"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Motivation *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_motivation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Job knowledge *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_knowledge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Communication skills *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_Communication"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Use of good judgement *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_judgement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Honesty/Integrity *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_honesty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Appropriate dress and appearance *"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:layout_height="50dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sp_appearance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:background="@drawable/titleborder"
+                android:text="Goals"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/feedborder"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/firstText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Areas of excellence: Includes those which are relevant during this evaluation perion. This should be related to performance or behavioral aspects you appreciated in their performance"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+
+                <EditText
+                    android:id="@+id/feed_excellence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:hint="Areas of excellence"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:maxLines="10"
+                    android:minLines="5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/secondText"
+                        android:fontFamily="@font/oxygen_bold"
+                        android:text="Areas of Improvement: Includes those which are relevant during this evaluation period. This should be related to improvements in their performance or behavior aspects"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+
+
+                <EditText
+                    android:id="@+id/feed_improvement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:hint="Areas of Improvement"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:maxLines="10"
+                    android:minLines="5" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/thirdText"
+                        android:fontFamily="@font/oxygen_bold"
+                        android:text="Achieved Goals Set in Previous Review?: Review the goals from the previous performance review"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+
+
+
+                <EditText
+                    android:id="@+id/feed_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:hint="Achieved Goals Set in Previous Review"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:maxLines="10"
+                    android:minLines="5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/forthText"
+                        android:fontFamily="@font/oxygen_bold"
+                        android:text="Goals for Next Review Period: Alongside the employee, set timely and specific goals that will be reviewed in the next evaluation period."
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+
+
+                <EditText
+                    android:id="@+id/feed_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:hint="Goals for Next Review Period"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:maxLines="10"
+                    android:minLines="5" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:background="@drawable/titleborder"
+                android:text="Comments"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/feedborder"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oxygen_bold"
+                    android:text="Comments"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+                <EditText
+                    android:id="@+id/feed_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:hint="Comments"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:maxLines="10"
+                    android:minLines="5" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/feed_submit"
+                android:layout_margin="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_border_edittext_filled"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
